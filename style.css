@@ -1,0 +1,81 @@
+body{
+    padding:6px 12px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:bold;
+    white-space:nowrap;
+    box-shadow:0 4px 10px rgba(70,130,180,.08);
+}
+
+.human-svg{
+    height:170px;
+    width:auto;
+    fill:#87CEEB;
+    transition:height .35s ease;
+    filter:drop-shadow(0 5px 10px rgba(70,130,180,.18));
+}
+
+.pot-bar{
+    width:30px;
+    height:60px;
+    background:linear-gradient(180deg,#5f9ec8,#4682B4);
+    border-radius:10px 10px 5px 5px;
+    transition:all .35s ease;
+
+    box-shadow:
+        inset -4px -4px 8px rgba(0,0,0,.12),
+        0 8px 14px rgba(70,130,180,.18);
+}
+
+.size-controls{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+    text-align:right;
+}
+
+.control.full{
+    grid-column:span 2;
+}
+
+.control label{
+    display:block;
+    margin-bottom:7px;
+    color:#4682B4;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.control input{
+    width:100%;
+    cursor:pointer;
+    accent-color:#4682B4;
+}
+
+/* زر المتجر */
+
+.store-box{
+    margin-top:24px;
+    display:flex;
+    justify-content:center;
+}
+
+.store-link{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:linear-gradient(180deg,#5f9ec8,#4682B4);
+    color:#fff !important;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:bold;
+    padding:12px 24px;
+    border-radius:999px;
+    box-shadow:0 8px 18px rgba(70,130,180,.18);
+    transition:all .3s ease;
+}
+
+.store-link:hover{
+    transform:translateY(-2px);
+    box-shadow:0 12px 24px rgba(70,130,180,.25);
+}
